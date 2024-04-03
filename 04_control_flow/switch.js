@@ -21,6 +21,7 @@ switch (month) {
         break;
     case "april":
         console.log("april");
+                //hello everybody
         break;
 
     default:
