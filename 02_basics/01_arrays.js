@@ -1,39 +1,38 @@
-// array
+//arrays
 
-const myArr = [0, 1, 2, 3, 4, 5]
-const myHeors = ["shaktiman", "naagraj"]
+const myArr = [1, 2, 3, 4, 5];
+const myHeros = ["Ironman", "Spiderman", "Deadpool", "Saktiman"];
 
-const myArr2 = new Array(1, 2, 3, 4)
-// console.log(myArr[1]);
+const myArr1 = new Array(1, 2, 3, 4);
 
-// Array methods
+console.log(myArr);
+// console.log(myHeros);
+// console.log(myArr1);
 
-// myArr.push(6)
-// myArr.push(7)
-// myArr.pop()
+// Array Methods
+myArr.push(6); //add element to the end
+console.log(myArr);
+myArr.pop(); // remove last element
+console.log(myArr);
+myArr.unshift(0); //add to start
+console.log(myArr);
+myArr.shift(); //delete first element
+console.log(myArr);
+console.log(myArr.includes(1)); // to check is element present
+console.log(myArr.indexOf(5)); //to check element index
 
-// myArr.unshift(9)
-// myArr.shift()
+const newArr = myArr.join();
+console.log(myArr);
+console.log(newArr);
 
-// console.log(myArr.includes(9));
-// console.log(myArr.indexOf(3));
+// slice or splice
 
-// const newArr = myArr.join()
+console.log("A", myArr);
 
-// console.log(myArr);
-// console.log( newArr);
+const myNArr1 = myArr.slice(1, 3); // return a piece of the array or not change original array
+console.log("B", myArr);
+console.log(myNArr1);
 
-
-// slice, splice
-
-console.log("A ", myArr);
-
-const myn1 = myArr.slice(1, 3)
-
-console.log(myn1);
-console.log("B ", myArr);
-
-
-const myn2 = myArr.splice(1, 3)
-console.log("C ", myArr);
-console.log(myn2);
+const myNArr2 = myArr.splice(1, 3); // return a piece of the array or  change original array
+console.log("C", myArr);
+console.log(myNArr2);

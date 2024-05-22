@@ -1,38 +1,39 @@
 // singleton
-// Object.create
+const tinderUser = new Object();
+console.log(tinderUser);
 
-// object literals
+// objects literals
+const mySym = Symbol("key1");
 
-const mySym = Symbol("key1")
+const jsUser = {
+  name: "Divyanshu",
+  "full name": "Divyanshu Bartwal",
+  [mySym]: "India", // use squre bracet to refer symbol
+  age: 23,
+  location: "Dehradun",
+  email: "divyanshubartwal67@gmail.com",
+  isLoggedIn: false,
+  lastLoginDays: ["Monday", "Tuesday"],
+};
 
+console.log(jsUser.email); // mostly  use
+console.log(jsUser["email"]); // some spacial case use
+console.log(jsUser["full name"]);
+console.log(jsUser[mySym]);
 
-const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
-    age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
-}
+jsUser.isLoggedIn = true;
+console.log(jsUser.isLoggedIn);
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+// Object.freeze(jsUser); // to stop changes in objects
+jsUser.email = "karan@gmail.com";
+console.log(jsUser);
 
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+jsUser.greeting = function () {
+  console.log("Hello Js User");
+};
 
-JsUser.greeting = function(){
-    console.log("Hello JS user");
-}
-JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
-}
-
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+jsUser.greetingTwo = function () {
+  console.log(`Hello Js User, ${this.name}`); // for refer value
+};
+console.log(jsUser.greeting());
+console.log(jsUser.greetingTwo());

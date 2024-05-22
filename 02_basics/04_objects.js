@@ -1,82 +1,76 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+const tinderUser = {};
 
-tinderUser.id = "123abc"
-tinderUser.name = "Sammy"
-tinderUser.isLoggedIn = false
+tinderUser.id = "123abc";
+tinderUser.name = "Sam";
+tinderUser.isLoggedIn = false;
 
 // console.log(tinderUser);
 
-const regularUser = {
-    email: "some@gmail.com",
-    fullname: {
-        userfullname: {
-            firstname: "hitesh",
-            lastname: "choudhary"
-        }
-    }
-}
-
-// console.log(regularUser.fullname.userfullname.firstname);
-
-const obj1 = {1: "a", 2: "b"}
-const obj2 = {3: "a", 4: "b"}
-const obj4 = {5: "a", 6: "b"}
-
-// const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
-
-const obj3 = {...obj1, ...obj2}
-// console.log(obj3);
-
-
-const users = [
-    {
-        id: 1,
-        email: "h@gmail.com"
+const regularsUser = {
+  email: "divyanshubartwal67@gmail.com",
+  fullName: {
+    userFullName: {
+      fName: "Divyanshu",
+      lName: "Bartwal",
     },
-    {
-        id: 1,
-        email: "h@gmail.com"
-    },
-    {
-        id: 1,
-        email: "h@gmail.com"
-    },
-]
+  },
+};
 
-users[1].email
-// console.log(tinderUser);
+// console.log(regularsUser.fullName.userFullName.fName);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+//merge object
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+const myObj1 = { 1: "a", 2: "b" };
+const myObj2 = { 3: "c", 4: "d" };
+const myObj4 = { 5: "e", 6: "f" };
 
+// const myObj3 = { myObj1, myObj2 };
+// const myObj3 = Object.assign({}, myObj1, myObj2, myObj4); // to assign all values to new target
+
+const myObj3 = { ...myObj1, ...myObj2, ...myObj4 }; // mostly use
+// console.log(myObj3);
+
+const user = [
+  {
+    id: 1,
+    email: "abcd@gmail.com",
+  },
+
+  {
+    id: 2,
+    email: "efgh@gmail.com",
+  },
+];
+
+// console.log(user[0].email);
+console.log(tinderUser);
+
+//Object method
+console.log(Object.keys(tinderUser)); // very useful
+console.log(Object.values(tinderUser)); // very useful
+console.log(Object.entries(tinderUser)); //
+
+console.log(tinderUser.hasOwnProperty("isLoggedIn")); // very useful
+
+// learn methods from prototype methods or mdn site
+
+// **************** object De -structure **********
 
 const course = {
-    coursename: "js in hindi",
-    price: "999",
-    courseInstructor: "hitesh"
-}
+  courseName: "Js-Hindi",
+  price: 999,
+  courseInstructor: "Hitesh Sir",
+};
 
-// course.courseInstructor
+const { courseInstructor } = course;
+console.log(courseInstructor);
+const { courseName: courseN } = course;
+console.log(courseN);
 
-const {courseInstructor: instructor} = course
-
-// console.log(courseInstructor);
-console.log(instructor);
+// ******** Json API Intro ***********
 
 // {
-//     "name": "hitesh",
-//     "coursename": "js in hindi",
-//     "price": "free"
+//   "name": "Divyanshu Bartwal",
+//   "courseName" : "Js-Hindi",
+//   "price": "free"
 // }
-
-[
-    {},
-    {},
-    {}
-]
-

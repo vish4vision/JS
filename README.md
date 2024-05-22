@@ -1,5 +1,10 @@
 # js-hindi-youtube
+
 A code repo for javascript series at Chai aur code youtube channel
+
+I add some comments to understand quickly and solve some problems and make this repo more undestandable
+
+I learnd from 1 month and i make my own repo also (https://github.com/code-with-divyanshu/code_js_hindi).
 
 ---
 
