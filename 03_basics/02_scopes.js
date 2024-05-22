@@ -1,58 +1,48 @@
-//var c = 300
-let a = 300
-if (true) {
-    let a = 10
-    const b = 20
-    // console.log("INNER: ", a);
-    
-}
-
-
-
-// console.log(a);
-// console.log(b);
-// console.log(c);
-
-
-function one(){
-    const username = "hitesh"
-
-    function two(){
-        const website = "youtube"
-        console.log(username);
-    }
-    // console.log(website);
-
-     two()
-
-}
-
-// one()
+let num1 = 300;
 
 if (true) {
-    const username = "hitesh"
-    if (username === "hitesh") {
-        const website = " youtube"
-        // console.log(username + website);
-    }
-    // console.log(website);
+  let num1 = 10; // block scoped
+  const num2 = 20; // block scoped
+  var num3 = 30; // global scoped
 }
 
-// console.log(username);
+console.log(num1);
+// console.log(num2);
+console.log(num3);
 
+// Nested Scope
 
-// ++++++++++++++++++ interesting ++++++++++++++++++
+function one() {
+  const username = "Divyanshu";
 
+  function two() {
+    const website = "Youtube";
+    console.log(username);
+  }
+  // console.log(website);  // error it's  scoped  ended
+  two();
+}
+one();
 
-console.log(addone(5))
-
-function addone(num){
-    return num + 1
+if (true) {
+  const username = "Ayush";
+  if (username === "Ayush") {
+    const website = " Youtube";
+    console.log(username + website);
+  }
+  // console.log(website);  // error it's  scoped  ended
 }
 
+// console.log(username); // error it's  scoped  ended
 
+//++++++++++++++++ intersiting concept +++++++++++++
 
-addTwo(5)
-const addTwo = function(num){
-    return num + 2
+console.log(addOne(5));
+function addOne(num) {
+  return num + 1;
 }
+
+console.log(addTwo(5));
+const addTwo = function (num) {
+  return num + 2;
+};

@@ -1,29 +1,29 @@
-"use strict"; // treat all JS code as newer version
+"use strict"; //treat all js code as newer version
 
-// alert( 3 + 3) // we are using nodejs, not browser
+// alert(3 + 3); // we are using nodejs, not browser
 
-console.log(3 
-    +
-     3) // code readability should be high
+// Datatypes
 
-console.log("Hitesh")
+let name = "divyanshu"; //string
+let age = 18; //number
+let isLoggedIn = false; //boolean
 
+//Premitive Datatypes
 
-let name = "hitesh"
-let age = 18
-let isLoggedIn = false
-let state;
+//number => 2 to power 53 limit
+//bigint =>
+//string => ""
+//boolean => true/false
+//null =>   standalone value
+//undefined =>  value not assign
+//symbol => to find uniqueness
 
-// number => 2 to power 53
-// bigint
-// string => ""
-// boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
+//Non-Premitive Datatypes
 
+//object
 
-// object
+//array
+//function
+//class
 
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+console.log(typeof undefined);

@@ -1,1 +1,1 @@
-console.log("Hitesh")
+console.log("Welcome to JavaScript");
