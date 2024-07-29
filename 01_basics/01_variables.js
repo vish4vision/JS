@@ -12,6 +12,7 @@ accountCity = "Bengaluru";
 
 console.log(accountId);
 console.log("hello devs...");
+console.log("branch hd");
 /*
 Prefer not to use var
 because of issue in block scope and functional scope
