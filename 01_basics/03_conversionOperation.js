@@ -17,7 +17,7 @@ let isLoggedIn = "";
 
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 // console.log(booleanIsLoggedIn);
-// console.log("33abc");
+// console.log("33abc"); 33abc
 
 // 1 => true; 0 => false
 // "" => false

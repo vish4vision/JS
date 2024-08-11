@@ -36,9 +36,9 @@ const myObject = {
   game2: "Spiderman",
 };
 
-for (const [key, value] of myObject) {
-  console.log(key, ":-", value);
-}
+// for (const [key, value] of myObject) {
+//   console.log(key, ":-", value);
+// }
 
 const myObject1 = [
   {
@@ -55,6 +55,11 @@ const myObject1 = [
   },
 ];
 
-for (const value of myObject1) {
-  console.log(":-", value);
+for (const key of myObject1) {
+  console.log(":-", key);
+}
+
+// give erroe
+for (const [key, value] of myObject1) {
+  console.log(key, ":-", value);
 }

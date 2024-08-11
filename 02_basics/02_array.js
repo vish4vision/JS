@@ -2,18 +2,18 @@ const marvel_heros = ["thor", "Ironman", "spiderman"];
 
 const dc_heros = ["superman", "flash", "batman"];
 
-// marvel_heros.push(dc_heros);
+marvel_heros.push(dc_heros);
 // console.log("🚀 ~ marvel_heros:", dc_heros);
 
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][0]);
 
 const allHeros = marvel_heros.concat(dc_heros);
-// console.log(allHeros);
+// console.log("allheroes", allHeros);
 
 const all_new_heros = [...marvel_heros, ...dc_heros];
 
-// console.log(all_new_heros);
+console.log(all_new_heros);
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
 
@@ -22,7 +22,7 @@ const real_another_array = another_array.flat(Infinity);
 
 //console.log(Array.isArray("Hitesh"));
 //The Array.isArray() static method determines whether the passed value is an Array.
-// console.log(Array.from("Hitesh"));
+//console.log(Array.from("Hitesh"));
 //The Array.from() method returns an array from any object with a length property.
 //The Array.from() method returns an array from any iterable object.
 //console.log(Array.from({ name: "hitesh" })); // interesting  -> https://chatgpt.com/c/895cf216-2034-439e-a253-a9228f3c5061
