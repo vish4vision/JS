@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closure aur chai</title>
-</head>
-<body style="background-color: #313131;">
-    <button id="orange">Orange</button>
-    <button id="green">Green</button>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Closure aur chai</title>
+    </head>
+    <body style="background-color: #313131;">
+        <button id="orange">Orange</button>
+        <button id="green">Green</button>
+    </body>
 
     <script>
+
+        // example 2
     // function init() {
     //     let name = "Mozilla"; 
     //     function displayName() {
@@ -20,6 +22,11 @@
     // }
     // init();
 
+
+    // parent chilse se nhi le skta 
+    // child parent s le skta h 
+    //child child se nhi le skta
+    // example 2
     // function outer(){
     //     let username = "hitesh"
     //     console.log("OUTER", secret);
@@ -34,10 +41,13 @@
     //     inner()
     //     innerTwo()
 
-    // }
-    // outer()
-    // console.log("TOO OUTER", username);
+    //  }
+    // // outer()
+    // // console.log("TOO OUTER", username);
 
+
+
+    // example 3
 
     // function makeFunc() {
     //     const name = "Mozilla";
@@ -48,6 +58,7 @@
     // }
 
     // const myFunc = makeFunc();
+    //sirf displayName nhi jayega uska pura lexical scope jayega pure scope
     // myFunc();
 
     </script>
@@ -61,6 +72,7 @@
 
         function clickHandler(color){
             // document.body.style.backgroundColor = `${color}`
+            //direct excute kr dega
 
             return function(){
                 document.body.style.backgroundColor = `${color}`

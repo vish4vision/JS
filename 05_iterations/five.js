@@ -1,39 +1,42 @@
-const coding = ["js", "ruby", "java", "python", "cpp"]
+//for each
+// calls a function for each element in an array  -- prototype bhi h eske
+//not apply on empty
 
-// coding.forEach( function (val){
-//     console.log(val);
-// } )
+const coding = ["js", "ruby", "java", "python", "cpp", 77];
 
-// coding.forEach( (item) => {
-//     console.log(item);
-// } )
+coding.forEach(function (val) {
+  //   console.log(val);
+});
 
-// function printMe(item){
-//     console.log(item);
-// }
+coding.forEach((item) => {
+  //   console.log(item);
+});
 
-// coding.forEach(printMe)
+function printMe(item) {
+  //   console.log(item);
+}
 
-// coding.forEach( (item, index, arr)=> {
-//     console.log(item, index, arr);
-// } )
+//coding.forEach(printMe); //doubt solve bcz pass a function refrence
+
+coding.forEach((item, index, arr) => {
+  //   console.log(item, index, arr);
+});
 
 const myCoding = [
-    {
-        languageName: "javascript",
-        languageFileName: "js"
-    },
-    {
-        languageName: "java",
-        languageFileName: "java"
-    },
-    {
-        languageName: "python",
-        languageFileName: "py"
-    },
-]
+  {
+    languageName: "javascript",
+    languageFileName: "js",
+  },
+  {
+    languageName: "java",
+    languageFileName: "java",
+  },
+  {
+    languageName: "python",
+    languageFileName: "py",
+  },
+];
 
-myCoding.forEach( (item) => {
-    
-    console.log(item.languageName);
-} )
+myCoding.forEach((item) => {
+  console.log(item.languageName);
+});
